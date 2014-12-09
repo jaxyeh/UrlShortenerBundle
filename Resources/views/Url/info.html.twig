@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="container">
+
+  <h2><a href="/{{ data.slug }}">{{ app.request.getSchemeAndHttpHost() }}/{{ data.slug }}</a> <small>{{ data.url }}</h2>
+  <p class="lead">Created on {{ data.date|date("F j, Y, g:i a") }}<br/>
+  {{ data.hits }} total hits to this shortener url</p>
+</div>
+{% endblock %}

@@ -1,0 +1,23 @@
+{
+    "name": "jaxyeh/url-shortener-bundle",
+    "description": "A basic implementation of URL Shortener Bundle for Symfony2",
+    "keywords": [ "symfony2", "url shortener", "shortener"],
+    "homepage": "https://github.com/jaxyeh/UrlShortenerBundle",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jason Yeh",
+            "email": "jason@yehs.us"
+        }
+    ],
+    "require": {
+        "symfony/symfony": ">=2.6.*",
+        "hashids/hashids": "1.0.4"
+    },
+    "autoload": {
+        "psr-0": {
+            "Jaxyeh\\UrlShortenerBundle": ""
+        }
+    }
+}

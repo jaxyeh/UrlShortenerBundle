@@ -1,0 +1,18 @@
+jaxyeh_url_create:
+    path:     /
+    defaults: { _controller: JaxyehUrlShortenerBundle:Url:create }
+
+jaxyeh_url_info:
+    path: /view/{slug}
+    defaults: { _controller: JaxyehUrlShortenerBundle:Url:info }
+
+jaxyeh_url_process:
+    path: /{slug}
+    defaults: { _controller: JaxyehUrlShortenerBundle:Url:process }
+
+# TODO: RESTful API
+# jaxyeh_url_get:
+#     path: /shorten
+#     defaults: { _controller: JaxyehUrlShortenerBundle:Url:shorten }
+#     requirements:
+#       _method: POST
